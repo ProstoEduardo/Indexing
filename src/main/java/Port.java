@@ -5,8 +5,7 @@ import java.util.Set;
 
 public class Port {
 
-    String[] indexes;
-
+    private final String[] indexes;
 
     public Port(String[] indexes) {
         this.indexes = indexes;
@@ -22,7 +21,14 @@ public class Port {
     }
 
     // Метод разложения строки в массив чисел
-    public List<Integer> stringDecomposition(String s) {
+    public List<Integer> stringDecomposition(String s){
+        if(s.equals("") || s.equals("-") || s.equals(",")) {
+            try {
+                throw new Exception("Вы ввели неверный формат строки");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
         List<Integer> list = new ArrayList<>();
         if (s.contains(",")) {
             String[] str = s.split(",");
