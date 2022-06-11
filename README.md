@@ -7,7 +7,7 @@
 1) добавить в проект библиотеку [IndexingLibrary.jar](target/IndexingLibrary.jar)
 2) использовать методы: arrayDecomposition() и arrayCombinations()
 
-<p align="center">
+<p align="left">
 
 <img src="https://img.shields.io/badge/Java-orange.svg" >
 
