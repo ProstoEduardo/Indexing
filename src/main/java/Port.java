@@ -22,7 +22,7 @@ public class Port {
 
     // Метод разложения строки в массив чисел
     public List<Integer> stringDecomposition(String s){
-        if(s.equals("") || s.equals("-") || s.equals(",")) {
+        if(!s.contains("\\d+")) {
             try {
                 throw new Exception("Вы ввели неверный формат строки");
             } catch (Exception e) {
