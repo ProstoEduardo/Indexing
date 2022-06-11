@@ -1,7 +1,7 @@
 # Тестовое задание 
 
 Описание задачи:
-+ [Индексация](##Описание)
++ [Индексация](taskDescription.md)
 
 ## Запуск:
 1) добавить в проект библиотеку [IndexingLibrary.jar](target/IndexingLibrary.jar)
